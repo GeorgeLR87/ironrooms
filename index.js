@@ -1,12 +1,9 @@
 // ./index.js
 // 1. IMPORTACIONES
 const express 	= require("express")
-
 const app		= express()
 const hbs		= require("hbs")
-
 const connectDB = require("./config/db")
-
 const sessionManager = require("./config/session")
 
 require("dotenv").config()

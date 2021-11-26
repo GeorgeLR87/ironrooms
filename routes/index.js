@@ -16,5 +16,8 @@ router.get("/login",routeGuard.usuarioNoLoggeado, indexController.viewLogin)
 
 router.post("/login",routeGuard.usuarioNoLoggeado, indexController.login)
 
+// CERRAR SESIÓN
+router.get("/logout", routeGuard.usuarioLoggeado, indexController.logout)
+
 
 module.exports = router
